@@ -1,4 +1,4 @@
-# create-ts-package
+# ts-package-init
 
 A fast, minimal, and modern TypeScript project initializer.
 
@@ -22,7 +22,7 @@ Create a TypeScript project with sensible defaults in seconds — no frameworks,
 ### Quick start
 
 ```bash
-npx create-ts-package my-app
+npx ts-package-init my-app
 cd my-app
 npm run dev
 ```
@@ -42,7 +42,7 @@ npm init ts-package my-app
 Minimal runnable TypeScript project.
 
 ```bash
-npx create-ts-package my-app
+npx ts-package-init my-app
 ```
 
 Scripts:
@@ -60,7 +60,7 @@ Scripts:
 For reusable npm packages.
 
 ```bash
-npx create-ts-package my-lib --preset library
+npx ts-package-init my-lib --preset library
 ```
 
 Includes:
@@ -74,7 +74,7 @@ Includes:
 For APIs, workers, and services.
 
 ```bash
-npx create-ts-package api --preset backend
+npx ts-package-init api --preset backend
 ```
 
 Includes:
@@ -88,7 +88,7 @@ Includes:
 For command-line tools.
 
 ```bash
-npx create-ts-package my-cli --preset cli
+npx ts-package-init my-cli --preset cli
 ```
 
 Includes:
@@ -102,7 +102,7 @@ Includes:
 Enable ESM with:
 
 ```bash
-npx create-ts-package my-app --esm
+npx ts-package-init my-app --esm
 ```
 
 This will:
@@ -114,8 +114,8 @@ This will:
 ## 🧹 ESLint & Prettier (optional)
 
 ```bash
-npx create-ts-package my-app --eslint
-npx create-ts-package my-app --prettier
+npx ts-package-init my-app --eslint
+npx ts-package-init my-app --prettier
 ```
 
 Prettier automatically enables ESLint integration.
@@ -125,10 +125,10 @@ Prettier automatically enables ESLint integration.
 ## 🧪 Examples
 
 ```bash
-npx create-ts-package demo
-npx create-ts-package my-lib --preset library --esm
-npx create-ts-package api --preset backend --eslint --prettier
-npx create-ts-package tool --preset cli
+npx ts-package-init demo
+npx ts-package-init my-lib --preset library --esm
+npx ts-package-init api --preset backend --eslint --prettier
+npx ts-package-init tool --preset cli
 ```
 
 ---
