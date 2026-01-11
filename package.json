@@ -1,0 +1,49 @@
+{
+  "name": "create-ts-package",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Fast, minimal, and modern TypeScript project initializer",
+  "author": "Mostafa Hanafy",
+  "license": "MIT",
+  "bin": {
+    "create-ts-package": "dist/cli.js"
+  },
+  "scripts": {
+    "dev": "tsx ./src/cli.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "typescript",
+    "cli",
+    "scaffold",
+    "generator",
+    "init",
+    "create-ts",
+    "typescript-cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mostafasayed/create-ts-package"
+  },
+  "homepage": "https://github.com/mostafasayed/create-ts-package",
+  "dependencies": {
+    "execa": "^9.6.1",
+    "fs-extra": "^11.3.3",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^25.0.5",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
