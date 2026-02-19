@@ -97,7 +97,10 @@ my-nest/
   tsconfig.json
   src/
     index.ts
+    main.ts
     app.module.ts
+    app.controller.ts
+    app.service.ts
 ```
 
 ### Moleculer
@@ -107,6 +110,9 @@ my-broker/
   tsconfig.json
   src/
     index.ts
+    moleculer.config.ts
+    services/
+      greeter.service.ts
 ```
 
 **Optional files and changes**
@@ -196,28 +202,30 @@ Includes:
 
 ### NestJS
 
-Minimal NestJS app scaffold.
+Minimal NestJS app scaffold (controller, service, module, main).
 
 ```bash
 npx ts-package-init my-nest --preset nestjs
 ```
 
 Includes:
-- NestJS bootstrap
+- App controller + service
+- Module + main bootstrap
 - build/dev/start scripts
 
 ---
 
 ### Moleculer
 
-Minimal Moleculer broker scaffold.
+Minimal Moleculer broker scaffold (config + sample service).
 
 ```bash
 npx ts-package-init my-broker --preset moleculer
 ```
 
 Includes:
-- Moleculer broker bootstrap
+- Broker config
+- Sample service
 - build/dev/start scripts
 
 ---
@@ -269,15 +277,6 @@ npx ts-package-init my-workspace --preset monorepo --skip-install
 npx ts-package-init my-nest --preset nestjs --package-manager pnpm
 npx ts-package-init my-broker --preset moleculer --interactive
 ```
-
----
-
-## 🛣 Roadmap
-
-- Preset-aware ESLint rules
-- Interactive mode
-- Monorepo preset
-- Framework presets (NestJS, Moleculer)
 
 ---
 

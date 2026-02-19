@@ -361,6 +361,11 @@ async function main() {
             break;
 
         case "nestjs":
+            pkg.scripts.build = "tsc";
+            pkg.scripts.dev = "tsx watch src/main.ts";
+            pkg.scripts.start = "node dist/main.js";
+            break;
+
         case "moleculer":
             pkg.scripts.build = "tsc";
             pkg.scripts.dev = "tsx watch src/index.ts";
