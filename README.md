@@ -1,10 +1,28 @@
 # ts-package-init
 
-A fast, minimal, and modern TypeScript project initializer.
+![npm](https://img.shields.io/npm/v/ts-package-init)
+![license](https://img.shields.io/npm/l/ts-package-init)
+![node](https://img.shields.io/node/v/ts-package-init)
+![downloads](https://img.shields.io/npm/dw/ts-package-init)
 
-Create a TypeScript project with sensible defaults in seconds — no frameworks, no boilerplate overload.
+A fast, minimal TypeScript CLI project initializer for Node.js.
+
+Create modern TypeScript projects with sensible defaults in seconds — without framework bloat or unnecessary boilerplate.
 
 ---
+
+## Why
+
+Many TypeScript starter templates are:
+
+- Over-engineered
+- Framework-heavy
+- Bloated with configuration
+- Hard to customize
+
+ts-package-init is a lightweight TypeScript CLI tool that scaffolds clean Node.js projects with practical defaults.
+
+Start fast. Stay minimal. Scale when needed.
 
 ## ✨ Features
 
@@ -276,6 +294,16 @@ npx ts-package-init tool --preset cli
 npx ts-package-init my-workspace --preset monorepo --skip-install
 npx ts-package-init my-nest --preset nestjs --package-manager pnpm
 npx ts-package-init my-broker --preset moleculer --interactive
+```
+
+---
+
+## 🚢 Release
+
+```bash
+npm run build
+npm pack --dry-run
+npm publish
 ```
 
 ---
